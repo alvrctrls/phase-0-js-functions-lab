@@ -3,8 +3,8 @@ function calculateTax(amount){
 return taxValue
 }
 
-function convertToUpperCase(text){
-    return text.convertToUpperCase
+function convertToUpperCase(text) {
+    return text.toUpperCase()
 }
 
 function findMaximum(num1, num2){
@@ -25,7 +25,7 @@ function isPalindrome(word) {
 
 function calculateDiscountedPrice(originalPrice,discountedPercentage){
     discount = discountedPercentage * (1/100)
-    discountedPrice = originalPrice - (1 - discount)
+    discountedPrice = originalPrice * (1 - discount)
 return discountedPrice
 }
 let originalPrice = 100
