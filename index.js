@@ -9,9 +9,12 @@ function convertToUpperCase(text){
 
 function findMaximum(num1, num2){
     if (num1 > num2)
-        console.log(num1)
-    else
-        console.log(num2)
+        return num1
+    else if (num1 < num2)
+        return num2
+    else (num1 === num2)
+        return num1 || num2
+return findMaximum
 }
 
 function isPalindrome(word) {
@@ -22,7 +25,7 @@ function isPalindrome(word) {
 
 function calculateDiscountedPrice(originalPrice,discountedPercentage){
     discount = discountedPercentage * (1/100)
-    discountedPrice = originalPrice * discount
+    discountedPrice = originalPrice - (1 - discount)
 return discountedPrice
 }
 let originalPrice = 100
